@@ -47,6 +47,8 @@ Limonaia is a fictional brand. Use this file as a model for your own.
 - Hot, every blend: a heaped teaspoon (about 2 g) per cup, just-boiled water, five minutes.
 - Estate, iced: two spoons in a cup of hot water for five minutes, then an hour in the fridge
   (or overnight). Pour over ice with a slice of lemon and a sprig of mint.
+- Any blend, iced: the same method. Summer photos and summer copy show the blends iced, since
+  nobody wants a hot cup at 30°C.
 
 ## Color
 
@@ -192,8 +194,10 @@ one-off, not yet a component.
 
 ### Photo library
 
-The scenes are on the Photography board of the brand kit. The six blend photos live in the
-product tile components. Every lid in every photo is flat and carries its round sticker.
+The first scenes are on the Photography board of the brand kit, and the newer website scenes are
+listed by where they're used. The six blend photos live in the product tile components. Every lid
+in every photo is flat and carries its round sticker. Each large photo appears once per site, and
+summer scenes show the tea iced.
 
 | Photo | What it shows | Printed on it | Notes |
 |---|---|---|---|
@@ -204,7 +208,12 @@ product tile components. Every lid in every photo is flat and carries its round 
 | Refill | Mattina jar with a refill pouch and lemons | Raccolto giugno 2026 | |
 | Gift box | Three jars in the wooden box, with the card | Harvest months | |
 | Natale | The gift box with the Natale jar and cinnamon | Raccolto novembre 2026 | November to December only |
-| Terrace cup | A glass cup of tea and the Mattina jar on a terrace, sea behind | Raccolto giugno 2026 | |
+| Terrace cup | A glass cup of tea and the Mattina jar on a terrace, sea behind | Raccolto giugno 2026 | Retired from the website: a hot cup by the sea reads wrong in summer |
+| Iced terrace | Iced Mattina in a jug and glasses on a terrace above the sea | Raccolto giugno 2026 | Home banner, May to September |
+| Winter window | A hot cup by a window over a grey winter sea, clementines, the Mattina jar | Raccolto giugno 2026 | Home banner, October to April |
+| Lemon grove | Terraced lemon grove above the sea | Nothing | Home: the story teaser |
+| Harvest | Hands picking a lemon on the hillside, a basket with wild fennel | Nothing | Our story |
+| Refill pour | Hands pouring a refill pouch into the Mattina jar | Raccolto giugno 2026 | Our story: keep the jar |
 | Hands with Mattina | Hands around a cup, the Mattina jar behind | Raccolto giugno 2026 | |
 | Estate iced | Iced hibiscus tea, lemons and the Estate jar, morning light | Raccolto luglio 2026 | Summer 2026 only |
 | Lemons and mint | A basket of lemons and fresh mint, dried hibiscus beside it | Nothing | Estate stories |
