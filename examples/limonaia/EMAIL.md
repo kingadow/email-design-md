@@ -21,6 +21,26 @@ Limonaia is a fictional brand. Use this file as a model for your own.
 - **What it never does:** health claims, "detox", or discount-first marketing. It sells a ritual
   and a place.
 
+## Proof points
+
+**The promise (UVP):** a Mediterranean pause for every hour of the day, picked on the Cilento
+coast and dated on every jar.
+
+**What backs it up (USPs).** Emails and pages draw on these, in these words or close to them:
+
+| Proof point | Line |
+|---|---|
+| A blend for every hour | Alba at dawn, Mattina with breakfast, and on to Sera after dinner. |
+| Dated on every jar | The harvest month is on every label, so you know how fresh it is. |
+| One coast | Lemons, figs, wild fennel, sage, bergamot and chamomile, all from Cilento. |
+| Keep the jar | Refills are $19 in a paper pouch, or 15% less on subscription. |
+| Real seasons | Estate in summer, Natale in winter. Then they're gone until next year. |
+| Gifts that feel chosen | Three blends in a wooden box, your note on the card, packed by hand. |
+
+- On the website: the first, second and fourth sit in a strip under the home hero; product pages
+  pick the three that fit the product; Our story shows all six.
+- In emails: use one or two that fit the email's job. Never list all six.
+
 ## Products and prices
 
 | Product | What's in it | Jar color | Size | Price | Notes |

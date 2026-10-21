@@ -24,6 +24,16 @@ Save your copy with the brand's files, with corrections.md next to it.
 - The promise:
 - What it never does: <!-- health claims, discount-first marketing, slang, exclamation marks... -->
 
+## Proof points
+
+<!-- One line that says what the brand promises (the UVP), then the few facts that prove it (the USPs). Every email and page draws on these, so write them once, here. Only facts that are true today. -->
+
+**The promise (UVP):**
+
+| Proof point | Line |
+|---|---|
+| | |
+
 ## Products and prices
 
 <!-- Every product that can appear in an email. Prices exactly as the store shows them. -->
