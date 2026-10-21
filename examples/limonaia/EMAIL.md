@@ -32,15 +32,16 @@ Limonaia is a fictional brand. Use this file as a model for your own.
 | Sera (evening) | Chamomile, lemon balm, lavender | Warm sand | 80 g jar | $24 | |
 | Estate (summer, iced) | Lemon, mint, hibiscus | Pale sea blue | 80 g jar | $26 | **Seasonal, May to September** |
 | Natale (winter) | Clementine, cinnamon | Deep cinnamon red | 80 g jar | $24 | **Seasonal, November to December**, sold mostly in the gift box |
-| Refill pouch | Any blend, no jar | Paper pouch | 80 g | $19 | |
-| Discovery set | Six 15 g mini jars | All six | 90 g | $32 | The usual first purchase |
+| Refill pouch | Any blend, no jar | Paper pouch | 80 g | $19 | Estate and Natale only in season |
+| Discovery set | Six 15 g mini jars | All six | 90 g | $32 | The usual first purchase. All six minis all year, Estate included: the one exception to the seasonal rule |
 | Gift box | Three jars, a wooden box, a card | Buyer's choice | 240 g | $68 | |
-| Subscription | Any jar or refill every 4, 6 or 8 weeks | Any | Varies | 15% off | |
+| Subscription | A jar or refill of a year-round blend every 4, 6 or 8 weeks | Any | Varies | 15% off | Year-round blends only. Skip or cancel any time |
 
 - A full jar makes about 35 cups, so a daily drinker runs out in about five weeks. Every refill
   email is timed to that.
 - Free US shipping from $50.
-- Any email that runs all year needs an off-season state for Estate and Natale.
+- Any email that runs all year needs an off-season state for Estate and Natale. Seasonal blends
+  are never offered on subscription.
 
 **How to brew**
 - Hot, every blend: a heaped teaspoon (about 2 g) per cup, just-boiled water, five minutes.
@@ -84,7 +85,8 @@ Limonaia is a fictional brand. Use this file as a model for your own.
 
 - Terracotta is for buttons, links and prices only.
 - Section eyebrows are olive. Card and tile eyebrows are stone.
-- Every price uses `Label/Price` in terracotta.
+- Every price uses `Label/Price` in terracotta. A unit or note after the dot is stone:
+  "$24 · 80 g", "$68 · ships free in the US".
 - Callout boxes (offers, deadlines) are sand with no border, on a cream section.
 - Lemon appears once per email at most, as a badge. The lemon in the logo doesn't count.
 - Sea appears only in Estate emails, as one band or badge with white text (7.2:1). Never for
@@ -121,6 +123,8 @@ desktop twin.
 **Section backgrounds.** Steps carries its own sand background. The callout box puts a sand box
 inside a transparent section. The top bar and footer are olive. Every other section is
 transparent and takes the email's cream, so two of them next to each other share a background.
+The Welcome blend grid (white tiles on a sand band) is the one other sand section: a documented
+one-off, not yet a component.
 
 - **Frame parts:** `Email/Top bar` (text property), `Email/Header`, `Email/Footer`
 - **Buttons:** `Button` with Style = Primary (terracotta fill, white label) or Secondary (olive
@@ -156,6 +160,7 @@ transparent and takes the email's cream, so two of them next to each other share
 - 20 px side margins (a 335 px column), 40 px top and bottom.
 - Inside a section: 12 px between lines of copy, 24 px from the copy to its button, 20 px from a
   heading or image to what follows. Steps keep 8 px.
+- Stacked steps sit 24 px apart, stacked cards 16 px.
 - Columns stack:
   - Tiles go two across, 15 px apart.
   - Image and text stacks with the image on top.
@@ -192,7 +197,8 @@ product tile components. Every lid in every photo is flat and carries its round 
 
 | Photo | What it shows | Printed on it | Notes |
 |---|---|---|---|
-| Hero | Six labeled jars on a stone wall, lemon grove behind | All six harvest months | Includes Estate: year-round emails need an alternate |
+| Hero, six jars | Six labeled jars on a stone wall, lemon grove behind | All six harvest months | Includes Estate: May to September only in year-round emails |
+| Hero, five jars | The same scene with the five year-round jars | Five harvest months | The October to April hero for year-round emails |
 | Alba, Mattina, Mezzogiorno, Pomeriggio, Sera, Estate | One jar each with its herbs, lid off and sticker up | That blend's harvest month | Product tiles. Estate's has an iced glass: summer only |
 | Discovery set | Six 15 g mini jars in their box, lid stickers on top | Blend names | |
 | Refill | Mattina jar with a refill pouch and lemons | Raccolto giugno 2026 | |

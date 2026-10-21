@@ -26,8 +26,13 @@ grade toward it.
 - **Seasonal products need an off-season state.** Estate (May to September) and Natale
   (November to December) never appear in a year-round flow without a conditional, or an
   alternate drawn beside the frame.
+  - Year-round heroes swap by month: the six-jar hero May to September, the five-jar hero
+    October to April, both drawn, with the swap written in the brief.
   - That covers every mention: the photo, the price, and counts like "six blends" or "any two
     blends" (second review).
+  - An off-season branch rewrites everything that depends on the missing product (headline,
+    price note, button and its link, any section that offers it) and is drawn beside the frame,
+    not only described. Seasonal blends are never offered on subscription (third review).
 - **Every jar in every photo carries its label.**
   - Jar bodies get a band label. Lids get the round sticker.
   - Photos must look like one shoot, matching the product tiles.
@@ -36,6 +41,8 @@ grade toward it.
   - A lid lying or leaning beside its jar counts, and so does anything in the background that
     reads as a jar. Fix it in the library photo, so every email that uses it is fixed at once
     (second review, 2026-10-21).
+  - Mini jars and top-down shots count too: any jar body that shows below its lid carries its
+    band (third review).
 - **A label in a photo is a claim** (cold test, brand owner's call). The harvest month printed on
   a jar has to fit the copy and the send date. Check the photo library in `EMAIL.md` before
   using a photo.
@@ -51,11 +58,19 @@ grade toward it.
   and the merge tag lives in the layer name and the brief.
 - **Dates name their market** (second review, gate). Limonaia sells to the US and the UK, so
   every arrival date and order cutoff says which country it's for, or sits in a country
-  conditional.
+  conditional. In a heading, top bar, subject or badge, the country is on the same line: a
+  qualifier in the next sentence doesn't count (third review).
 - **Sample lines in `EMAIL.md` are tone examples.** Never reuse one word for word as a headline,
   subject or preview (second review).
 - **The brief carries written alt text** for every image. A checklist line saying "alt text
-  needed" is a miss (second review).
+  needed" is a miss (second review). An image that swaps gets one line per version (third
+  review).
+- **Dynamic copy is drawn at its longest** (third review). Every layer that changes per person or
+  per product carries its tag in the layer name, the last two words of a dynamic headline are
+  joined with a non-breaking space, and the long version (a long first name, Mezzogiorno) is
+  drawn beside the frame.
+- **Each offer appears once** (brand owner's call, third review). The same price and button don't
+  repeat in two sections.
 - **Copy hygiene.**
   - **Gate (second review):** no hard line breaks, including line breaks inside component text
     properties. Split into separate text layers.

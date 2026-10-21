@@ -67,7 +67,14 @@ Everything here was designed with the skills in this repo, then reviewed blind, 
    - a seasonal blend counted in "any two blends"
 
    The lids were fixed once, in the photo library, which fixed every email and the website.
-10. **Audit.** The file scores 100 on [`figma-email-readiness`](../../skills/figma-email-readiness).
+10. **Third blind review.** After those fixes: 79, 77, 74, 79. Each email failed at most one
+    narrow gate:
+    - a deadline heading without "US"
+    - mini jars in the discovery-set photo with no band labels
+    - an off-season version of the refill email that was only described, not drawn
+
+    All three were fixed, and Refill was simplified so each offer appears once.
+11. **Audit.** The file scores 100 on [`figma-email-readiness`](../../skills/figma-email-readiness).
 
 ## What we learned
 
@@ -89,7 +96,8 @@ looked fine until it sat next to labeled product tiles. Then it looked like a di
 None of it would have survived a send.
 
 **A better rulebook finds deeper problems.** The second review came after every first-round fix,
-and the scores barely moved: 61 to 67, 64 to 63, 63 to 63, 64 to 69. The critics had more rules to
+and the scores barely moved: 61 to 67, 64 to 63, 63 to 63, 64 to 69. The third review, after the
+photo and claim fixes, moved them to 79, 77, 74 and 79. The critics had more rules to
 check, and the spacing and contrast misses were gone, so they found claims and photos instead. A
 score only means something next to the rules it was graded against.
 
