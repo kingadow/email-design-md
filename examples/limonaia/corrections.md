@@ -1,14 +1,14 @@
 # Limonaia: corrections log
 
-Rules learned from blind reviews of the four Limonaia emails. The first review scored them
-61 (Welcome 1), 64 (Discovery), 63 (Refill) and 64 (Natale). Each rule below showed up in two or
+Rules learned from blind reviews of the Limonaia emails. Each rule below showed up in two or
 more emails, or was a call the brand owner made after reviewing them. The critic checks this log
 first on every review.
 
-Each rule is written in its most general form, so it covers the whole class of miss.
+Each rule is written in its most general form, so it covers the whole class of miss. Rules marked
+"cold test" came from a fifth email, designed by a fresh agent that had only this repo.
 
-A cold test followed on 2026-10-21. A fresh agent with only this repo designed a fifth email (an
-Estate launch), and a blind review scored it 65. The rules marked "cold test" came from it.
+The scores are in the [README](README.md), not here. A critic that reads an earlier score tends to
+grade toward it.
 
 ## Rules
 
@@ -17,7 +17,8 @@ Estate launch), and a blind review scored it 65. The rules marked "cold test" ca
     are olive.
   - **Gate:** terracotta text on `color/sand` is 4.46:1 and fails AA at 13 px.
 - **Every price uses `Label/Price` in `color/terracotta`.** That includes one-off price lines in
-  body sections, not only the product tile and card components.
+  body sections, not only the product tile and card components. A price inside a body sentence
+  moves to the Text block's price line (second review).
 - **One section rhythm.**
   - Desktop sections are 48 px top and bottom and 40 px at the sides, with 16 px between items.
   - When two sections next to each other share a background, the second drops its top padding.
@@ -25,11 +26,16 @@ Estate launch), and a blind review scored it 65. The rules marked "cold test" ca
 - **Seasonal products need an off-season state.** Estate (May to September) and Natale
   (November to December) never appear in a year-round flow without a conditional, or an
   alternate drawn beside the frame.
+  - That covers every mention: the photo, the price, and counts like "six blends" or "any two
+    blends" (second review).
 - **Every jar in every photo carries its label.**
   - Jar bodies get a band label. Lids get the round sticker.
   - Photos must look like one shoot, matching the product tiles.
   - **Gate (cold test):** a visible jar body or lid without its label or sticker blocks "ready to
     build". The rule came back once, so it's a gate now.
+  - A lid lying or leaning beside its jar counts, and so does anything in the background that
+    reads as a jar. Fix it in the library photo, so every email that uses it is fixed at once
+    (second review, 2026-10-21).
 - **A label in a photo is a claim** (cold test, brand owner's call). The harvest month printed on
   a jar has to fit the copy and the send date. Check the photo library in `EMAIL.md` before
   using a photo.
@@ -43,8 +49,16 @@ Estate launch), and a blind review scored it 65. The rules marked "cold test" ca
   the same caption line count. Rewrite the copy until they match.
 - **The mockup shows rendered content** (brand owner's call). The footer shows a sample address,
   and the merge tag lives in the layer name and the brief.
+- **Dates name their market** (second review, gate). Limonaia sells to the US and the UK, so
+  every arrival date and order cutoff says which country it's for, or sits in a country
+  conditional.
+- **Sample lines in `EMAIL.md` are tone examples.** Never reuse one word for word as a headline,
+  subject or preview (second review).
+- **The brief carries written alt text** for every image. A checklist line saying "alt text
+  needed" is a miss (second review).
 - **Copy hygiene.**
-  - No hard line breaks: split into separate text layers.
+  - **Gate (second review):** no hard line breaks, including line breaks inside component text
+    properties. Split into separate text layers.
   - Curly apostrophes everywhere.
   - No single word alone on the last line.
 

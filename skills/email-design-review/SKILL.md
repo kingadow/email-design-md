@@ -119,6 +119,8 @@ After the review, update `corrections.md` next to the brand's `EMAIL.md`:
   becomes a gate, so it blocks future reviews.
 - **Keep it lean.** Merge overlapping rules, and drop anything now enforced by a token or a
   component.
+- **Rules only, no scores.** The next critic reads this log first. An earlier score in it
+  anchors the next grade, so keep scores somewhere else.
 
 The model doesn't learn between sessions. The corrections log is the memory: writing the miss
 down is what makes the next email better.

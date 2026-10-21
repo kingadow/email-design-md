@@ -60,7 +60,14 @@ Everything here was designed with the skills in this repo, then reviewed blind, 
      blend, and a badge spilling out of its card.
 8. **Fixes.** Most were fixed once, in a component, which fixed every email. The misses that
    repeated became rules in [`corrections.md`](corrections.md).
-9. **Audit.** The file scores 100 on [`figma-email-readiness`](../../skills/figma-email-readiness).
+9. **Second blind review.** Four new critics, with a stricter rulebook. Scores: 67, 63, 63, 69.
+   Spacing, contrast, buttons and footers all passed. Every email still failed a gate:
+   - jar lids with no sticker in the product photos (three emails)
+   - a delivery date that didn't say it was for the US only
+   - a seasonal blend counted in "any two blends"
+
+   The lids were fixed once, in the photo library, which fixed every email and the website.
+10. **Audit.** The file scores 100 on [`figma-email-readiness`](../../skills/figma-email-readiness).
 
 ## What we learned
 
@@ -80,6 +87,11 @@ looked fine until it sat next to labeled product tiles. Then it looked like a di
 - buttons sitting too close to their text
 
 None of it would have survived a send.
+
+**A better rulebook finds deeper problems.** The second review came after every first-round fix,
+and the scores barely moved: 61 to 67, 64 to 63, 63 to 63, 64 to 69. The critics had more rules to
+check, and the spacing and contrast misses were gone, so they found claims and photos instead. A
+score only means something next to the rules it was graded against.
 
 **Most fixes belong in a component.** Button heights, the footer's unsubscribe links, the
 product tile's price style: each was one change that fixed all four emails. When a miss repeats

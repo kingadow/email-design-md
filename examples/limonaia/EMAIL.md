@@ -187,23 +187,25 @@ transparent and takes the email's cream, so two of them next to each other share
 
 ### Photo library
 
-All photos are on the Photography board of the brand kit.
+The scenes are on the Photography board of the brand kit. The six blend photos live in the
+product tile components. Every lid in every photo is flat and carries its round sticker.
 
 | Photo | What it shows | Printed on it | Notes |
 |---|---|---|---|
-| Hero | Six labeled jars on a stone wall, lemon grove behind | All six harvest months | Welcome hero |
-| Alba, Mattina, Mezzogiorno, Pomeriggio, Sera, Estate | One jar each, with its herbs | That blend's harvest month | Product tiles |
+| Hero | Six labeled jars on a stone wall, lemon grove behind | All six harvest months | Includes Estate: year-round emails need an alternate |
+| Alba, Mattina, Mezzogiorno, Pomeriggio, Sera, Estate | One jar each with its herbs, lid off and sticker up | That blend's harvest month | Product tiles. Estate's has an iced glass: summer only |
 | Discovery set | Six 15 g mini jars in their box, lid stickers on top | Blend names | |
 | Refill | Mattina jar with a refill pouch and lemons | Raccolto giugno 2026 | |
 | Gift box | Three jars in the wooden box, with the card | Harvest months | |
 | Natale | The gift box with the Natale jar and cinnamon | Raccolto novembre 2026 | November to December only |
-| Terrace cup | A glass cup of tea on the terrace, sea behind | Nothing | |
-| Hands | Hands around a cup | Nothing | The jar in the background is unlabeled: crop it out |
-| Estate iced | The Estate jar with an iced glass, lemon and mint | Raccolto luglio 2026 | Hard midday light. Fits summer 2026 copy only |
-| Lemon basket | Lemons with rosemary and fennel flower | Nothing | No mint: don't pair it with mint copy |
+| Terrace cup | A glass cup of tea and the Mattina jar on a terrace, sea behind | Raccolto giugno 2026 | |
+| Hands with Mattina | Hands around a cup, the Mattina jar behind | Raccolto giugno 2026 | |
+| Estate iced | Iced hibiscus tea, lemons and the Estate jar, morning light | Raccolto luglio 2026 | Summer 2026 only |
+| Lemons and mint | A basket of lemons and fresh mint, dried hibiscus beside it | Nothing | Estate stories |
+| Lemon basket | Lemons with sage, rosemary and fennel flower | Nothing | The harvest in general. No mint |
 
 The harvest months on the labels: Alba January, Mattina June, Mezzogiorno May, Pomeriggio August,
-Sera April, Estate July, Natale November, all 2026.
+Sera April, Estate July, Natale November, all 2026. Replace the photos after each harvest.
 
 ## Voice
 
@@ -223,12 +225,12 @@ Sample lines show the tone. They are examples, not ready-made copy.
 
 | Moment | Sample line |
 |---|---|
-| Subject line | the lemons are in |
-| Preview text | Estate is back for summer: lemon, mint and hibiscus, made for ice. |
-| Welcome opening | Ciao. Pull up a chair. Here is what grows outside our door, and how it ends up in your cup. |
-| Refill reminder | Your Mattina jar is getting light. A refill pouch is $19 and ships today. |
-| Gift deadline | Three jars, a wooden box and your note inside. Order by Thursday for Mother’s Day. |
-| Buttons | Choose your blend · Refill Mattina · Send a gift box |
+| Subject line | the fennel is flowering |
+| Preview text | Sage, rosemary and mint, for the middle of the day. |
+| Welcome opening | Welcome to the terrace. Here is what we grow, and why every jar has an hour. |
+| Refill reminder | About a week of Sera left, by our count. A pouch fills the jar again for $19. |
+| Gift deadline | A wooden box, three jars and your card on top. Order by May 5 for US delivery before Mother’s Day. |
+| Buttons | Shop the blends · Refill Sera · Build a gift box |
 
 ## Customers
 
