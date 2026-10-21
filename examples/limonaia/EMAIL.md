@@ -142,7 +142,11 @@ transparent and takes the email's cream, so two of them next to each other share
 ## Layout
 
 **Desktop (600 px)**
-- Sections are 48 px top and bottom and 40 px at the sides, with 16 px between items.
+- Sections are 48 px top and bottom and 40 px at the sides.
+- Inside a section: 16 px between lines of copy (eyebrow, heading, lead, body, price), 28 px
+  from the copy to its button, 24 px from a heading or image to the row beside or below it.
+- Inside a step: 8 px. Inside a tile, chooser row or cart line: 2 px, so a product reads as one
+  unit.
 - When two sections next to each other share a background, the second drops its top padding.
 - Standalone buttons are 240 px wide, 28 px below their copy. Card buttons fill the card.
   Chooser-row buttons hug their label.
@@ -150,6 +154,8 @@ transparent and takes the email's cream, so two of them next to each other share
 
 **Mobile (375 px)**
 - 20 px side margins (a 335 px column), 40 px top and bottom.
+- Inside a section: 12 px between lines of copy, 24 px from the copy to its button, 20 px from a
+  heading or image to what follows. Steps keep 8 px.
 - Columns stack:
   - Tiles go two across, 15 px apart.
   - Image and text stacks with the image on top.

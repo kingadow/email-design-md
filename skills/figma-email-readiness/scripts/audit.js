@@ -148,7 +148,7 @@ for (const { page, node: e, tops } of R.emails) {
     const O = box(o);
     const overlapX = O.x < ex1 && O.x + O.width > ex0;
     const above = overlapX && O.y + O.height <= ey + 10 && O.y >= ey - 700;
-    const beside = O.x >= ex1 - 10 && O.x <= ex1 + 400 && O.y < ey + E.height && O.y + O.height > ey;
+    const beside = O.x >= ex1 - 10 && O.x <= ex1 + 900 && O.y < ey + E.height && O.y + O.height > ey; // 900 leaves room for a mobile frame between the email and its brief
     if (!above && !beside) continue;
     const t = textOf(o);
     if (above && (o.type === 'WIDGET' || /status/i.test(o.name))) hasStatus = true;

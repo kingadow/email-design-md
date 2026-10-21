@@ -62,6 +62,9 @@ haven't come back.
 - **Layer names.** Every text layer in a component is named for its role (Time, Name, Price,
   Label), never left as a copy of the first example's text.
 - **Footer copy (cold test).** The desktop and mobile footers carry the same words.
+- **Inner spacing (cold test).** Every section component uses one scale: 16 px between lines of
+  copy and 28 px to the button on desktop, 12 and 24 on mobile, 8 inside a step. Image and text,
+  the callout box and the steps had drifted to 8, 14 and 4.
 
 ## Brand notes
 
