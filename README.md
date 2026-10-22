@@ -12,6 +12,8 @@ This repo is that equivalent. It covers four things:
 
 It comes with a complete worked example: a fictional tea brand with a homepage, a brand kit and four lifecycle emails, all built and reviewed this way.
 
+**[Download the kit (zip)](https://github.com/kingadow/email-design-md/releases/latest/download/email-design-md.zip)**, or clone the repo.
+
 ![The four Limonaia demo emails](examples/limonaia/images/emails-overview.png)
 
 ## What's inside
