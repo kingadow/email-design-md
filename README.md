@@ -14,6 +14,8 @@ It comes with a complete worked example: a fictional tea brand with a homepage, 
 
 **[Download the kit (zip)](https://github.com/kingadow/email-design-md/releases/latest/download/email-design-md.zip)**, or clone the repo.
 
+**Want the editable Figma file?** The full Limonaia file is free for anyone who stars this repo: the brand kit, every block, the four emails with their briefs, and the website. Star it, then message me your GitHub username on [LinkedIn](https://www.linkedin.com/in/kingadow) and I'll send you the link.
+
 ![The four Limonaia demo emails](examples/limonaia/images/emails-overview.png)
 
 ## What's inside
