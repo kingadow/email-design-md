@@ -55,7 +55,7 @@ Limonaia is a fictional herbal tea brand from the Cilento coast in southern Ital
 - **Fixes and rules.** Every miss was fixed. The repeated ones became rules in the [corrections log](examples/limonaia/corrections.md).
 - **Second and third blind reviews.** After the first fixes, new critics scored the emails 67, 63, 63 and 69, and every one still failed a gate, mostly on photos and claims. After those fixes, the third round scored 79, 77, 74 and 79. The details are in [the example](examples/limonaia).
 - **Audit.** The finished file scores 100 on the readiness audit.
-- **Cold test.** A fresh Claude session, given only this repo, designed a fifth email from a brief. A blind review scored it 65 and failed it on one claim: the jar label in the photo said July 2026, and the copy promised this year's harvest for a May 2027 send. Both the builder's friction log and the review went back into these files.
+- **Cold test.** A fresh Claude session, given only this repo, designed a fifth email from a brief. A blind review scored it 65 and failed it on one claim: the copy promised this year's harvest, and the jar in the product photo was labeled with last year's. Both the builder's friction log and the review went back into these files.
 
 Start at [`examples/limonaia`](examples/limonaia).
 
