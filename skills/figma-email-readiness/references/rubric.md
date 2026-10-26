@@ -30,7 +30,7 @@ but is built wrong produces a broken build.
 
 | Check | Pts | Passes when |
 |---|---|---|
-| F1 Email width | 4 | Emails are found at 600 or 640 px wide |
+| F1 Email width | 4 | Emails are found at 600 or 640 px wide, or 1200 or 1280 px in files drawn at 2x |
 | F2 Auto-layout | 4 | At least 95% of containers inside emails use auto-layout |
 | F3 No overlaps | 4 | At least 90% of emails have no overlapping or absolutely positioned layers (icons excluded). Email HTML cannot render overlaps. |
 | F4 No fixed text boxes | 4 | At least 90% of emails have no fixed-size text boxes, which clip when a fallback font is wider |

@@ -4,8 +4,9 @@
 // references/rubric.md and returns compact JSON. It never writes to the file.
 
 const CONFIG = {
-  emailWidths: [600, 640],   // frame widths that count as an email
-  minEmailHeight: 700,       // shorter frames at those widths are components or cards
+  emailWidths: [600, 640],   // frame widths that count as an email, at 1x
+  scales: [1, 2],            // 2x files keep emails at 1200 or 1280 px; their sizes are read at half
+  minEmailHeight: 700,       // at 1x; shorter frames at those widths are components or cards
   coverage: 0.9,             // share of emails that must have inbox preview / brief / status
   maxEmails: 40,             // larger files are sampled evenly, and the result says so
 };
@@ -15,6 +16,7 @@ const DEFAULT_NAME = /^((Frame|Rectangle|Group|Ellipse|Vector|Line|Polygon|Star|
 const PLACEHOLDER = /lorem ipsum|^(heading|subheading|title|button|subject line|preview text|body copy|label|text)$/i;
 const MERGE_TAG = /\{\{|\{%/;
 const near = (a, b, tol = 1) => Math.abs(a - b) <= tol;
+const emailScale = n => CONFIG.scales.find(s => CONFIG.emailWidths.some(w => near(n.width, w * s, s)));
 const ex = (arr, n = 5) => arr.slice(0, n);
 
 // ---------- color helpers ----------
@@ -48,12 +50,12 @@ for (const page of figma.root.children) {
   comps.forEach(c => localComponents.push(c));
   const tops = [];
   for (const k of page.children) { tops.push(k); if (k.type === 'SECTION') for (const kk of k.children) tops.push(kk); }
-  const emails = tops.filter(n => ['FRAME', 'COMPONENT', 'INSTANCE'].includes(n.type) && CONFIG.emailWidths.some(w => near(n.width, w)) && n.height >= CONFIG.minEmailHeight);
+  const emails = tops.filter(n => ['FRAME', 'COMPONENT', 'INSTANCE'].includes(n.type) && emailScale(n) && n.height >= CONFIG.minEmailHeight * emailScale(n));
   const widgets = page.findAllWithCriteria({ types: ['WIDGET'] });
   widgetsTotal += widgets.length;
   if (/brand|guideline|foundation|style ?guide|identity/i.test(page.name)) brandPages.push(page);
   R.pages.push({ name: page.name, components: comps.length, emails: emails.length });
-  for (const e of emails) R.emails.push({ page, node: e, tops });
+  for (const e of emails) R.emails.push({ page, node: e, tops, scale: emailScale(e) });
 }
 
 let sampled = false;
@@ -73,10 +75,10 @@ const fails = { width: [], overlap: [], fixedText: [], spacer: [], fewInstances:
 const handoff = { inbox: 0, brief: 0, status: 0, missing: [] };
 const bad = { overlap: new Set(), fixedText: new Set(), built: new Set(), contrast: new Set(), copy: new Set() };
 
-for (const { page, node: e, tops } of R.emails) {
+for (const { page, node: e, tops, scale } of R.emails) {
   await figma.setCurrentPageAsync(page);
   const label = `${page.name} / ${e.name}`;
-  if (!CONFIG.emailWidths.some(w => near(e.width, w))) fails.width.push(label);
+  if (!emailScale(e)) fails.width.push(label);
 
   const all = e.findAll(() => true);
   const insideInstance = n => { for (let p = n.parent; p && p !== e; p = p.parent) if (p.type === 'INSTANCE') return true; return false; };
@@ -127,7 +129,7 @@ for (const { page, node: e, tops } of R.emails) {
       const tf = topFill(n), bg = background(n);
       if (!art && tf?.color && bg?.color && n.fontSize !== figma.mixed) {
         const ratio = contrast(tf.color, bg.color);
-        const large = n.fontSize >= 24 || (n.fontSize >= 18.66 && isBold(n.fontName));
+        const fs = n.fontSize / scale, large = fs >= 24 || (fs >= 18.66 && isBold(n.fontName));
         if (ratio < (large ? 3 : 4.5)) bad.contrast.add(label), fails.contrast.push(`${label} › "${chars.slice(0, 30)}" ${hex(tf.color)} on ${hex(bg.color)} = ${ratio.toFixed(2)}:1 at ${n.fontSize}px`);
       }
     }
@@ -147,8 +149,8 @@ for (const { page, node: e, tops } of R.emails) {
     if (o === e || o.type === 'SECTION') continue;
     const O = box(o);
     const overlapX = O.x < ex1 && O.x + O.width > ex0;
-    const above = overlapX && O.y + O.height <= ey + 10 && O.y >= ey - 700;
-    const beside = O.x >= ex1 - 10 && O.x <= ex1 + 900 && O.y < ey + E.height && O.y + O.height > ey; // 900 leaves room for a mobile frame between the email and its brief
+    const above = overlapX && O.y + O.height <= ey + 10 && O.y >= ey - 700 * scale;
+    const beside = O.x >= ex1 - 10 && O.x <= ex1 + 900 * scale && O.y < ey + E.height && O.y + O.height > ey; // 900 leaves room for a mobile frame between the email and its brief
     if (!above && !beside) continue;
     const t = textOf(o);
     if (above && (o.type === 'WIDGET' || /status/i.test(o.name))) hasStatus = true;
@@ -209,7 +211,10 @@ const fillPct = pct(tokenFills, fills);
 chk('Color', 'K1 color tokens exist', 5, tokenCount >= 5, `${colorVars.length} local variables, ${paintStyles.length} color styles, ${remoteVars} library variables in use`);
 chk('Color', 'K2 email fills use tokens', 5, nE > 0 && fillPct >= 0.9, `${tokenFills}/${fills} solid fills bound to a token`);
 chk('Color', 'K3 tight palette', 5, nE > 0 && rawHex.size <= 8, `${rawHex.size} distinct raw hex colors in emails`, [...rawHex.entries()].sort((a, b) => b[1] - a[1]).map(([h, n]) => `${h} ×${n}`));
-const sizes = textStyles.map(s => s.fontSize);
+// a 2x file keeps its text styles at double size too, so read them at the emails' scale
+const fileScale = nE && R.emails.filter(x => x.scale === 2).length > nE / 2 ? 2 : 1;
+if (fileScale === 2) R.warnings.push({ what: 'Emails drawn at 2x (1200 or 1280 px wide): type sizes and contrast were read at half', count: R.emails.filter(x => x.scale === 2).length, evidence: [] });
+const sizes = textStyles.map(s => s.fontSize / fileScale);
 chk('Type', 'T1 email type scale', 5, sizes.some(s => s >= 26 && s <= 48) && sizes.some(s => s >= 14 && s <= 18) && sizes.some(s => s <= 14), `${textStyles.length} text styles, sizes ${[...new Set(sizes)].sort((a, b) => a - b).join(', ')}`);
 chk('Type', 'T2 email text uses styles', 5, nE > 0 && pct(styledTexts, texts) >= 0.9, `${styledTexts}/${texts} text layers use a text style`);
 const autoPct = pct(autoContainers, containers);
@@ -233,7 +238,7 @@ const score = Math.floor(Object.values(C).reduce((s, c) => s + (c.pass ? c.pts :
 const grade = score >= 90 ? 'Ready' : score >= 75 ? 'Minor gaps' : score >= 55 ? 'Needs work' : 'Not ready';
 
 // file-level findings: missing foundations reported once, at the top
-if (!nE) R.fileFindings.push('No email frames found at 600 or 640 px wide. Either there are no emails yet, or they use another width (set CONFIG.emailWidths).');
+if (!nE) R.fileFindings.push('No email frames found at 600 or 640 px wide, or 1200 or 1280 px for files drawn at 2x. Either there are no emails yet, or they use another width (set CONFIG.emailWidths).');
 if (!tokenCount) R.fileFindings.push('No color variables or color styles at all. Every color in the emails is typed by hand.');
 if (!textStyles.length) R.fileFindings.push('No text styles at all. Type sizes are set by hand on every layer.');
 if (!localComponents.length && !usedComponentNames.size) R.fileFindings.push('No components. Every email is drawn from scratch, so nothing can be fixed once for all emails.');

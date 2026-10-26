@@ -46,6 +46,7 @@ designer and every build in the email platform.
 | CONFIG | Default | Meaning |
 |---|---|---|
 | `emailWidths` | `[600, 640]` | Frame widths that count as an email |
+| `scales` | `[1, 2]` | Also finds emails drawn at 2x (1200 or 1280 px) and reads their sizes at half |
 | `minEmailHeight` | `700` | Shorter frames at those widths are cards or components |
 | `coverage` | `0.9` | Share of emails that must pass the per-email and handoff checks |
 | `maxEmails` | `40` | Larger files are sampled evenly. The report must say so. |

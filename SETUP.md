@@ -58,6 +58,7 @@ Write the fallback fonts down too (Georgia, Arial), since many email apps block 
 ## 5. Email frames
 
 - 600 px wide (640 works too), one column that stacks on mobile.
+- Files that keep emails at 2x (1200 or 1280 px wide) work too. The audit finds them and reads their type sizes and contrast at half. Any other width: change `emailWidths` at the top of `skills/figma-email-readiness/scripts/audit.js`.
 - Auto-layout on every container. No absolute positioning, no overlapping layers: email HTML can't render them.
 - Text boxes set to grow with their text, never fixed size.
 - Built from component instances, with no empty spacer frames.
