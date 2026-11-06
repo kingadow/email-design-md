@@ -2,6 +2,8 @@
 
 **A design system for email that AI can follow.**
 
+**⭐ Star this repo and get the editable Figma file.** The full Limonaia file is free for anyone who stars the repo: the brand kit, every block, the four emails with their briefs, and the website. Star it, then send your GitHub username to [kinga@kingadow.com](mailto:kinga@kingadow.com?subject=EMAIL.md%20Figma%20file) or on [LinkedIn](https://www.linkedin.com/in/kingadow) and I'll send you the link.
+
 Ask an AI to design an email and you usually get something close to your brand but not quite right: colors a shade off, text that fails contrast, buttons and layouts that fall apart when someone builds the email in Klaviyo. Website designers solved part of this with design files the AI reads first. Email has its own rules, and until now it had no equivalent.
 
 This repo is that equivalent. It covers four things:
@@ -13,8 +15,6 @@ This repo is that equivalent. It covers four things:
 It comes with a complete worked example: a fictional tea brand with a homepage, a brand kit and four lifecycle emails, all built and reviewed this way.
 
 **[Download the kit (zip)](https://github.com/kingadow/email-design-md/releases/latest/download/email-design-md.zip)**, or clone the repo.
-
-**Want the editable Figma file?** The full Limonaia file is free for anyone who stars this repo: the brand kit, every block, the four emails with their briefs, and the website. Star it, then message me your GitHub username on [LinkedIn](https://www.linkedin.com/in/kingadow) and I'll send you the link.
 
 ![The four Limonaia demo emails](examples/limonaia/images/emails-overview.png)
 
