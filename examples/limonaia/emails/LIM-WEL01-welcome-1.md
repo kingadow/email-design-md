@@ -29,7 +29,7 @@ badge.
 The headline greets by name when there is one:
 
 ```django
-Ciao{% if person.first_name %}, {{ person.first_name }}{% endif %}. Pull up a chair.
+{% with name=person.first_name|default:''|strip %}Ciao{% if name %}, {{ name|title }}{% endif %}. Pull up a chair.{% endwith %}
 ```
 
 The frame shows the version without a name.
