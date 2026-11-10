@@ -2,7 +2,7 @@
 
 **A design system for email that AI can follow.**
 
-**⭐ Star this repo and get the editable Figma file.** The full Limonaia file is free for anyone who stars the repo: the brand kit, every block, the four emails with their briefs, and the website. Star it, then send your GitHub username to [kinga@kingadow.com](mailto:kinga@kingadow.com?subject=EMAIL.md%20Figma%20file) or on [LinkedIn](https://www.linkedin.com/in/kingadow) and I'll send you the link.
+**⭐ Star this repo and get the editable Figma file.** The full Limonaia file is free for anyone who stars the repo: the brand kit, every block, the four emails with their briefs, and the website. Star it, then send your GitHub username to [kinga@kingadow.com](mailto:kinga@kingadow.com?subject=EMAIL.md%20Figma%20file) or on [LinkedIn](https://www.linkedin.com/in/kingadow) and I'll send you the link. Or [sign up for the Figma Email Design Kit](https://kingadow.com/?utm_source=github&utm_medium=readme&utm_campaign=email-design-md#lead-magnet-form) and the steps come by email.
 
 Ask an AI to design an email and you usually get something close to your brand but not quite right: colors a shade off, text that fails contrast, buttons and layouts that fall apart when someone builds the email in Klaviyo. Website designers solved part of this with design files the AI reads first. Email has its own rules, and until now it had no equivalent.
 
@@ -74,7 +74,12 @@ This is the design layer. Three things sit outside it:
 - **The build:** turning the design into a working email in Klaviyo.
 - **Measurement:** whether the emails make money.
 
-Those are the parts I do for brands. If you want them set up properly, you can find me at [kingadow.com](https://kingadow.com).
+Those are the parts I do for brands. **Want them set up for your brand?** I'll audit your Figma file and Klaviyo templates on a free 30-minute call and tell you what to fix first. [Book the audit](https://calendly.com/kingadow/introductory-call-with-kinga-dow) or write to [kinga@kingadow.com](mailto:kinga@kingadow.com).
+
+## More from Kinga Dow
+
+- [blog-md](https://github.com/kingadow/blog-md): a blog system you build yourself with Claude, so the people looking for your expertise can find you.
+- [Case studies](https://kingadow.com/case-studies): retention and email systems built for e-commerce brands.
 
 ## License
 
