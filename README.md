@@ -74,7 +74,7 @@ This is the design layer. Three things sit outside it:
 - **The build:** turning the design into a working email in Klaviyo.
 - **Measurement:** whether the emails make money.
 
-Those are the parts I do for brands. **Want them set up for your brand?** I'll audit your Figma file and Klaviyo templates on a free 30-minute call and tell you what to fix first. [Book the audit](https://calendly.com/kingadow/introductory-call-with-kinga-dow) or write to [kinga@kingadow.com](mailto:kinga@kingadow.com).
+Those are the parts I do for brands. **Want them set up for your brand?** I'll audit your Figma file and Klaviyo templates on a free 30-minute call and tell you what to fix first. [Book the audit](https://calendly.com/kingadow/figma-klaviyo-template-audit) or write to [kinga@kingadow.com](mailto:kinga@kingadow.com).
 
 ## More from Kinga Dow
 
